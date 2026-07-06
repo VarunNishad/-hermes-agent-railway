@@ -3,7 +3,7 @@ FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 # Pinned hermes-agent release. Auto-bumped daily by .github/workflows/auto-update.yml
 # which queries the GitHub API and commits a new tag when upstream releases one.
 # Format: vYYYY.M.D (e.g. v2026.5.16). Use `main` only for bleeding-edge testing.
-ARG HERMES_REF=v2026.7.1
+ARG HERMES_REF=
 
 # tini: tiny init as PID 1 — reaps zombie grandchildren (MCP stdio servers, git,
 # browser daemons) so long-running containers don't exhaust the kernel PID table.
